@@ -29,7 +29,7 @@ class VersionDetail(APIView):
 
     def get(self, request, pk):
         version = self.get_object(pk)
-        serializer = VersionSerializer(version)
+        serializer = VersionDetailSerializer(version)
         return Response(serializer.data)
 
     def put(self, request, pk):

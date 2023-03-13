@@ -5,6 +5,6 @@ from products.views import (
 
 )
 
-urlpatterns = [path('versions/', ListCreateVersion.as_view(), name="list-versions"),
+urlpatterns = [path('versions/', ListCreateVersion.as_view(), name="versions"),
                path('version/<int:pk>', VersionDetail.as_view(), name="version-details")]
 
